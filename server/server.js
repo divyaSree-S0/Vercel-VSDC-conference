@@ -253,8 +253,6 @@ app.post('/register', async (req, res) => {
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        // user: 'vsdchomrugconference2024@gmail.com',
-        // pass: 'roeuogkrqzfvaucu'
         user:process.env.USER,
         pass:process.env.PASS
     }
